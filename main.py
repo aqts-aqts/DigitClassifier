@@ -4,9 +4,6 @@ from sklearn.utils import shuffle
 from typing import Union
 from load import load_images
 
-epochs = 100
-rate = 0.1
-
 def sigmoid(x: Union[float, np.ndarray]) -> Union[float, np.ndarray]:
     return expit(x)
 
