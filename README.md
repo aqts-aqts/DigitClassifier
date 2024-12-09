@@ -40,11 +40,10 @@ This repository contains a from-scratch Convolutional Neural Network (CNN) for h
 
 ## Project Structure
 
-- `train.py`: Script to train the CNN model.
-- `evaluate.py`: Script to evaluate the trained model.
-- `visualize.py`: Script to visualize the results.
-- `model.py`: Contains the CNN model implementation.
-- `utils.py`: Utility functions for data processing and model operations.
+- `train.py`: Script to train the model.
+- `test.py`: Script to run the test cases with the trained weights.
+- `test-one.py`: Tests only one data/test.png image
+- `load.py`: Utility functions for data processing.
 - `data/`: Directory to store the MNIST dataset.
 - `weights/`: Stores the trained weights.
 
