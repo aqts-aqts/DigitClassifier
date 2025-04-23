@@ -1,8 +1,15 @@
 import numpy as np
 from scipy.special import expit
-from sklearn.utils import shuffle
 from typing import Union
 from load import load_images
+
+def shuffle(*arrays: np.ndarray, random_state: int = None) -> tuple[np.ndarray, ...]:
+    if random_state is not None:
+        np.random.seed(random_state)
+
+    indices = np.arange(len(arrays[0]))
+    np.random.shuffle(indices)
+    return tuple(array[indices] for array in arrays)
 
 def sigmoid(x: Union[float, np.ndarray]) -> Union[float, np.ndarray]:
     return expit(x)

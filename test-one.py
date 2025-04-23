@@ -3,7 +3,6 @@ from scipy.special import expit
 from typing import Union
 from load import load_image
 
-epochs = 100
 rate = 0.1
 
 def sigmoid(x: Union[float, np.ndarray]) -> Union[float, np.ndarray]:
