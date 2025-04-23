@@ -23,7 +23,7 @@ This repository contains a from-scratch Convolutional Neural Network (CNN) for h
 
 2. Install the required packages:
     ```bash
-    pip install numpy scipy
+    pip install numpy scipy pillow
     ```
 
 ## Usage
